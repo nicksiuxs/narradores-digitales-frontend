@@ -1,22 +1,29 @@
 import React, { useState, useEffect } from "react";
-import socketIOClient from "socket.io-client";
-const ENDPOINT = "http://127.0.0.1:4001";
+
+import Home from './components/Home/Home'
+
+// import socketIOClient from "socket.io-client";
+// const ENDPOINT = "http://127.0.0.1:4001";
 
 function App() {
-  const [response, setResponse] = useState("");
+  // const [response, setResponse] = useState("");
 
-  useEffect(() => {
-    const socket = socketIOClient(ENDPOINT);
-    socket.on("data", data => {
-			console.log(data)
-      setResponse(data);
-    });
-  }, []);
+  // useEffect(() => {
+  //   const socket = socketIOClient(ENDPOINT);
+  //   socket.on("data", data => {
+	// 		console.log(data)
+  //     setResponse(data);
+  //   });
+  // }, []);
 
   return (
-    <p>
-      It's <time dateTime={response}>{response}</time>
-    </p>
+
+		<>
+			<Home/>
+		</>
+    // <p>
+    //   It's <time dateTime={response}>{response}</time>
+    // </p>
   );
 }
 
