@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 
 import Home from './components/Home/Home'
+import SetUprecord from './components/SetUpRecord/SetUprecord'
 
 // import socketIOClient from "socket.io-client";
 // const ENDPOINT = "http://127.0.0.1:4001";
@@ -27,16 +28,13 @@ function App() {
 		<Router>
       <Switch>
         <Route path="/iniciar">
-            <div>hola</div>
+            <SetUprecord />
         </Route>
         <Route path="/">
             <Home />
         </Route>
       </Switch>
 		</Router>
-    // <p>
-    //   It's <time dateTime={response}>{response}</time>
-    // </p>
   );
 }
 
