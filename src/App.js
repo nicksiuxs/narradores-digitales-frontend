@@ -7,7 +7,8 @@ function App() {
 
   useEffect(() => {
     const socket = socketIOClient(ENDPOINT);
-    socket.on("FromAPI", data => {
+    socket.on("data", data => {
+			console.log(data)
       setResponse(data);
     });
   }, []);
