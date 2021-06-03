@@ -1,4 +1,10 @@
 import React, { useState, useEffect } from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 import Home from './components/Home/Home'
 
@@ -18,9 +24,16 @@ function App() {
 
   return (
 
-		<>
-			<Home/>
-		</>
+		<Router>
+      <Switch>
+        <Route path="/iniciar">
+            <div>hola</div>
+        </Route>
+        <Route path="/">
+            <Home />
+        </Route>
+      </Switch>
+		</Router>
     // <p>
     //   It's <time dateTime={response}>{response}</time>
     // </p>

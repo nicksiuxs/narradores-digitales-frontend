@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
+
 import "./Home.css";
 
 const Home = () => {
@@ -7,7 +9,9 @@ const Home = () => {
 		<div className="home">
 			<div className="home-card">
 				<h1>Narradores Digitales</h1>
-				<button>Iniciar grabación</button>
+				<Link to="/iniciar">
+					<button>Iniciar grabación</button>
+				</Link>
 			</div>
 		</div>
 	);
