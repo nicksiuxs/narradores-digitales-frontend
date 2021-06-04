@@ -3,20 +3,30 @@ import React from "react";
 import "./SetUprecord.css";
 
 import Header from "../Header/Header";
-import { useReactMediaRecorder } from "react-media-recorder";
 
-const SetUprecord = () => {
-	const { status, startRecording, stopRecording, mediaBlobUrl } =
-		useReactMediaRecorder({ screen: true });
+import CardSelect from "../CardSelect/CardSelect";
+
+import Casa from "../../img/casa.png";
+import Parque from "../../img/parque.png";
+
+const SetUprecord = ({ callbackSelectEscenario, callbackSelectPersonaje }) => {
 	return (
 		<div className="set-up-record">
 			<Header />
-			Selecciona un escenario
-			<div>
-				<p>{status}</p>
-				<button onClick={startRecording}>Start Recording</button>
-				<button onClick={stopRecording}>Stop Recording</button>
-				<video src={mediaBlobUrl} controls autoplay loop />
+			<div className="set-up-escenario">
+				<h2>Selecciona un escenario</h2>
+				<div className="set-up-escenarios">
+					<CardSelect
+						imageRoute={Casa}
+						callbackSet={callbackSelectEscenario}
+						id={1}
+					/>
+					<CardSelect
+						imageRoute={Parque}
+						callbackSet={callbackSelectEscenario}
+						id={2}
+					/>
+				</div>
 			</div>
 		</div>
 	);

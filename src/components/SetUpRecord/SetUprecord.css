@@ -2,3 +2,26 @@
 	height: 100vh;
 	padding: 10px;
 }
+
+.set-up-escenario {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+}
+
+.set-up-escenario h2 {
+	text-align: center;
+	margin-top: 50px;
+	font-size: 30px;
+}
+
+.set-up-escenarios {
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+}
+
+.set-up-escenarios div:first-child {
+	margin-right: 10rem;
+}

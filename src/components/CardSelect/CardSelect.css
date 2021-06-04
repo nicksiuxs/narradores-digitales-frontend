@@ -1,0 +1,12 @@
+.card-select {
+	display: flex;
+	justify-content: center;
+	background-color: red;
+	padding: 10px;
+	border-radius: 10px;
+	width: fit-content;
+}
+
+.card-image {
+	max-height: 300px;
+}
