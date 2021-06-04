@@ -3,7 +3,11 @@ import React from "react";
 import "./Header.css";
 
 const Header = () => {
-	return <header>Narradores digitales</header>;
+	return (
+		<header>
+			<h1>Narradores digitales</h1>
+		</header>
+	);
 };
 
 export default Header;
