@@ -1,6 +1,6 @@
 .set-up-record {
 	height: 100vh;
-	padding: 10px;
+	background-color: #6184db;
 }
 
 .set-up-escenario {
@@ -13,7 +13,8 @@
 .set-up-escenario h2 {
 	text-align: center;
 	margin-top: 50px;
-	font-size: 30px;
+	font-size: 40px;
+	color: white;
 }
 
 .set-up-escenarios {
