@@ -18,12 +18,19 @@ function App() {
 	//   });
 	// }, []);
 
+	const [dataSelected, setDataSelected] = useState({
+		escenario: 0,
+		personaje: 0,
+	});
+
 	const setEscenario = (data) => {
 		console.log("escenario", data);
+		setDataSelected({ ...dataSelected, escenario: data });
 	};
 
 	const setPersonaje = (data) => {
 		console.log("personaje", data);
+		setDataSelected({ ...dataSelected, personaje: data });
 	};
 
 	return (
@@ -33,6 +40,7 @@ function App() {
 					<SetUprecord
 						callbackSelectEscenario={setEscenario}
 						callbackSelectPersonaje={setPersonaje}
+						data={dataSelected}
 					/>
 				</Route>
 				<Route path="/">

@@ -13,7 +13,11 @@ import Parque from "../../img/parque.png";
 import Chico from "../../img/nino.png";
 import Chica from "../../img/nina.png";
 
-const SetUprecord = ({ callbackSelectEscenario, callbackSelectPersonaje }) => {
+const SetUprecord = ({
+	callbackSelectEscenario,
+	callbackSelectPersonaje,
+	data,
+}) => {
 	const [current, setCurrent] = useState("escenario");
 
 	const setPage = (page) => {
@@ -68,7 +72,7 @@ const SetUprecord = ({ callbackSelectEscenario, callbackSelectPersonaje }) => {
 
 			{current === "record" && (
 				<div className="set-up-escenario">
-					<Record background={1} />
+					<Record data={data} />
 				</div>
 			)}
 		</div>
