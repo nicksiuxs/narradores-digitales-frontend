@@ -55,7 +55,7 @@ const SetUprecord = ({ callbackSelectEscenario, callbackSelectPersonaje }) => {
 
 			{current === "record" && (
 				<div className="set-up-escenario">
-					<Record />
+					<Record background={1} />
 				</div>
 			)}
 		</div>
