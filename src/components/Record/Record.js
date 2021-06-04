@@ -11,10 +11,21 @@ const Record = () => {
 
 	return (
 		<div className="preview">
-			<Canvas />
-			{/* <button onClick={() => startRecording}>Start Recording</button>
-			<button onClick={() => stopRecording}>Stop Recording</button>
-			<video src={mediaBlobUrl} controls autoplay loop /> */}
+			<div className="preview-container">
+				<Canvas />
+				<div className="preview-buttons">
+					<button onClick={startRecording}>Play</button>
+					<button onClick={stopRecording}>Stop</button>
+				</div>
+			</div>
+			<video
+				src={mediaBlobUrl}
+				controls
+				autoPlay
+				loop
+				height={500}
+				width={600}
+			/>
 		</div>
 	);
 };
