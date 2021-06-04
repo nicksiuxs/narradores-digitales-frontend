@@ -6,13 +6,15 @@ import Header from "../Header/Header";
 
 import CardSelect from "../CardSelect/CardSelect";
 
+import Record from "../Record/Record";
+
 import Casa from "../../img/casa.png";
 import Parque from "../../img/parque.png";
 import Chico from "../../img/nino.png";
 import Chica from "../../img/nina.png";
 
 const SetUprecord = ({ callbackSelectEscenario, callbackSelectPersonaje }) => {
-	const [current, setCurrent] = useState("personajes");
+	const [current, setCurrent] = useState("record");
 	return (
 		<div className="set-up-record">
 			<Header />
@@ -48,6 +50,12 @@ const SetUprecord = ({ callbackSelectEscenario, callbackSelectPersonaje }) => {
 							id={2}
 						/>
 					</div>
+				</div>
+			)}
+
+			{current === "record" && (
+				<div className="set-up-escenario">
+					<Record />
 				</div>
 			)}
 		</div>
