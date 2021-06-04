@@ -4,24 +4,32 @@
 	align-items: center;
 	height: 100vh;
 	width: 100%;
+	background-color: #6184db;
 }
 
 .home-card {
 	width: 37.5rem;
 	height: 350px;
-	border: 1px solid;
 	border-radius: 10px;
 
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	background-color: #533a71;
+	color: white;
+}
+
+.home-card h1 {
+	font-size: 3.5rem;
 }
 
 .home-card button {
 	height: 50px;
-	width: 200px;
+	width: fit-content;
 	border-radius: 6px;
 	border: none;
-	background-color: blueviolet;
+	background-color: #50c5b7;
+	margin-top: 2rem;
+	font-size: 1.5rem;
 }
