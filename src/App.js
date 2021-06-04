@@ -30,7 +30,10 @@ function App() {
 		<Router>
 			<Switch>
 				<Route path="/iniciar">
-					<SetUprecord callbackSelectEscenario={setEscenario} />
+					<SetUprecord
+						callbackSelectEscenario={setEscenario}
+						callbackSelectPersonaje={setPersonaje}
+					/>
 				</Route>
 				<Route path="/">
 					<Home />

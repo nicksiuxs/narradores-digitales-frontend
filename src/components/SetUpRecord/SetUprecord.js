@@ -8,8 +8,8 @@ import CardSelect from "../CardSelect/CardSelect";
 
 import Casa from "../../img/casa.png";
 import Parque from "../../img/parque.png";
-import Chico from "../../img/casa.png";
-import Chica from "../../img/parque.png";
+import Chico from "../../img/nino.png";
+import Chica from "../../img/nina.png";
 
 const SetUprecord = ({ callbackSelectEscenario, callbackSelectPersonaje }) => {
 	const [current, setCurrent] = useState("personajes");
