@@ -14,7 +14,12 @@ import Chico from "../../img/nino.png";
 import Chica from "../../img/nina.png";
 
 const SetUprecord = ({ callbackSelectEscenario, callbackSelectPersonaje }) => {
-	const [current, setCurrent] = useState("record");
+	const [current, setCurrent] = useState("escenario");
+
+	const setPage = (page) => {
+		setCurrent(page);
+	};
+
 	return (
 		<div className="set-up-record">
 			<Header />
@@ -25,11 +30,15 @@ const SetUprecord = ({ callbackSelectEscenario, callbackSelectPersonaje }) => {
 						<CardSelect
 							imageRoute={Casa}
 							callbackSet={callbackSelectEscenario}
+							callBackPage={setPage}
+							page={"personajes"}
 							id={1}
 						/>
 						<CardSelect
 							imageRoute={Parque}
 							callbackSet={callbackSelectEscenario}
+							callBackPage={setPage}
+							page={"personajes"}
 							id={2}
 						/>
 					</div>
@@ -42,11 +51,15 @@ const SetUprecord = ({ callbackSelectEscenario, callbackSelectPersonaje }) => {
 						<CardSelect
 							imageRoute={Chico}
 							callbackSet={callbackSelectPersonaje}
+							callBackPage={setPage}
+							page={"record"}
 							id={1}
 						/>
 						<CardSelect
 							imageRoute={Chica}
 							callbackSet={callbackSelectPersonaje}
+							callBackPage={setPage}
+							page={"record"}
 							id={2}
 						/>
 					</div>
